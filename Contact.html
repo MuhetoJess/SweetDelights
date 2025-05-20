@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights Bakery - Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <table id="site-container">
+        <!-- Header Row -->
+        <tr id="header-row">
+            <td id="header-cell" colspan="2">
+                <table id="header-content-table">
+                    <tr>
+                        <td><img src="logo3.png" alt="Sweet Delights Bakery Logo" id="logo-image"></td>
+                        <td id="logo-area">
+                            <h1 id="site-title">Sweet Delights Bakery</h1>
+                        </td>
+                        <td id="tagline-area">
+                            <p id="site-tagline">Freshly Baked Goodness, Every Day!</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+         <!-- Navigation Row - UPDATED -->
+        <tr id="nav-row">
+            <td id="nav-cell" colspan="2">
+                <table id="nav-table">
+                    <tr>
+                        <td class="nav-item"><a href="index.html" id="nav-home">Home</a></td> 
+                        <td class="nav-item"><a href="products.html" id="nav-products">Products</a></td>
+                        <td class="nav-item"><a href="about.html" id="nav-about">About Us</a></td>
+                        <td class="nav-item"><a href="contact.html" id="nav-contact-active">Contact Us</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Main Content Row -->
+        <tr id="content-row">
+            <td id="main-content-cell">
+                <h1 id="contact-page-heading">Stay In Touch With Us</h1>
+                <p id="contact-intro">
+                    We'd love to hear from you! Whether you have a question, want to place a custom order, or just want to say hello,
+                    please use the form below or reach out through our other contact channels.
+                </p>
+
+                <table id="contact-layout-table">
+                    <tr>
+                        <td id="contact-image-cell">
+                            <img src="black baker.jpg" alt="Friendly Baker at Sweet Delights Bakery" id="baker-image">
+                            <h3 id="other-contact-heading">Other Ways to Reach Us</h3>
+                            <p class="contact-details-text">Phone: 0788000000</p>
+                            <p class="contact-details-text">Email: info@sweetdelights.com</p>
+                            <p class="contact-details-text">Visit Us: 123 Kimironko, Kigaly City, KG 210</p>
+                        </td>
+                        <td id="contact-form-cell">
+                            <h2 id="form-heading">Send Us a Message</h2>
+                            <form id="contact-form" action="submit_contact.php" method="POST"> <!-- PHP file to be created later -->
+                                <label for="name">Full Name:</label>
+                                <input type="text" id="name" name="name" required>
+
+                                <label for="email">Email Address:</label>
+                                <input type="email" id="email" name="email" required>
+
+                                <label for="phone">Phone Number (Optional):</label>
+                                <input type="tel" id="phone" name="phone">
+
+                                <label for="subject">Subject:</label>
+                                <input type="text" id="subject" name="subject" required>
+
+                                <label for="message">Your Message:</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+
+                                <button type="submit">Send Message</button>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr id="footer-row">
+            <td id="footer-cell" colspan="2">
+                <h4><a href="contact.html" id="footer-nav-contact-contact">Contact Us</a></h4> <!-- Unique ID if needed -->
+                <p id="contact-info">If you would Like more Informarion or to place an order, Reach out to us here.</p>
+                <p id="developer-info">Website by Jess Muheto_26481</p>
+            </td>
+        </tr>
+
+    </table>
+
+    <script src="js/script.js"></script> <!-- Assuming script.js is generic or not critical for this page -->
+</body>
+</html>
