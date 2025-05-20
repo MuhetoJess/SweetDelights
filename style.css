@@ -1,0 +1,361 @@
+/* Basic Reset & Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f3ef; /* Light beige for bakery feel */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Site Container Table --- */
+#site-container {
+    width: 95%;
+    margin: 15px auto; /* Center the table */
+    border-collapse: collapse; /* Important for table styling */
+    background-color: #fff; /* White background for the content area */
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* --- Header Row & Cells --- */
+#header-row {
+    background-color: #e4b87c; /* A warm pink/coral for bakery */
+    color: #fff;
+}
+#header-cell {
+    padding: 10px;
+}
+#header-content-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#logo-area {
+    width: 70%; /* Give more space to title */
+    text-align: left;
+    vertical-align: middle;
+}
+
+#site-title {
+    margin: 0;
+    color: #333;
+    padding-left: 20px;
+    font-size: 2.5em;
+    font-family: 'Georgia', serif; /* A more decorative font */
+}
+
+#logo-image { max-height: 80px; }
+
+#tagline-area {
+    text-align: right;
+    vertical-align: middle;
+}
+#site-tagline {
+    margin: 0;
+    color: #333;
+    padding-right: 20px;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+
+/* --- Navigation Row & Cells --- */
+#nav-row {
+    background-color: #d3a76b; /* Slightly darker than header */
+}
+#nav-cell {
+    padding: 0; /* Remove padding if nav-table handles it */
+}
+#nav-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+#nav-table td.nav-item { /* Targeting td with class for more specificity if needed */
+    padding: 5px 0; /* Vertical padding, no horizontal */
+}
+#nav-table td.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 18px; /* Padding for clickable area */
+    font-weight: bold;
+    display: inline-block; /* To allow padding to work well */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+/* UPDATED/CORRECTED Active/Hover states for navigation */
+#nav-table td.nav-item a:hover,
+#nav-table td.nav-item a#nav-home,              /* Active Home on index.html */
+#nav-table td.nav-item a#nav-products-active,   /* Active Products on products.html */
+#nav-table td.nav-item a#nav-about-active,      /* Active About on about.html */
+#nav-table td.nav-item a#nav-contact-active    /* Active Contact on contact.html */
+{
+    background-color: #c2965a; /* Darker shade on hover/active (brown) */
+}
+
+/* --- Main Content Row & Cells --- */
+/*#content-row { }*/ /* No specific style for the row itself yet */
+
+#main-content-cell {
+    padding: 30px;
+    text-align: center; /* Center headings and intro text by default */
+}
+#welcome-heading { /* Specific to homepage */
+    color: brown;
+    font-size: 5em; /* Large welcome for homepage */
+    margin-bottom: 15px;
+}
+#welcome-text { /* Specific to homepage */
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto; /* Center the paragraph */
+}
+
+/* Banner Table - Homepage */
+#banner-table {
+    width: 100%;
+    margin-bottom: 30px;
+}
+#banner-cell {
+    text-align: center; /* Center the image within the cell */
+}
+
+#banner-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Featured Products Table - Shared by Homepage and Products Page */
+#featured-title { /* For "Our Cozy Confections" or similar titles */
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e4b87c;
+    display: inline-block; /* To make border only as wide as text */
+    padding-bottom: 5px;
+}
+/* Styles for products page main heading (if different from #featured-title) */
+#products-page-main-heading { /* As used in products.html */
+    text-align: center;
+    color: #8c5a32; /* Theme brown from embedded style example */
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+#featured-products-table {
+    width: 100%;
+    /* border-collapse: collapse; <-- Original */
+    border-collapse: separate; /* Allow border-spacing */
+    border-spacing: 15px; /* Spacing between product cells, as per embedded style */
+    margin-top: 20px;
+}
+#featured-products-table td.featured-product-item {
+    /* width: 25%; <-- Original */
+    width: 23%; /* Adjusted for 4 items with spacing, as per embedded style */
+    padding: 15px;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #e9c46a; /* As per embedded style */
+    border-radius: 8px; /* As per embedded style */
+    background-color: #fefae0; /* As per embedded style */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* As per embedded style */
+}
+.product-thumbnail {
+    /* width: 180px; height: 180px; <-- Original */
+    max-width: 100%; /* As per embedded style */
+    height: 150px; /* As per embedded style */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* border: 3px solid #f0f0f0; <-- Original */
+    border: 1px solid #ddd; /* As per embedded style */
+}
+.product-name {
+    font-size: 1.2em;
+    color: #8c5a32; /* As per embedded style */
+    margin-top: 0; /* Original: 5px */
+    margin-bottom: 5px;
+}
+.product-description {
+    font-size: 0.9em;
+    color: #555;
+    min-height: 50px; /* As per embedded style, ensure some space */
+}
+
+
+/* --- Footer Row & Cells --- */
+#footer-row {
+    background-color: #333;
+    color: #ccc;
+}
+#footer-cell {
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+#footer-cell h4 { /* Style for the "Contact Us" heading in footer */
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+#footer-cell h4 a { /* Ensuring the link within H4 is styled */
+    color: #e4b87c; /* Theme accent color for links in footer */
+    text-decoration: none;
+}
+#footer-cell h4 a:hover {
+    text-decoration: underline;
+}
+#contact-info { /* Paragraph in footer */
+    margin: 5px 0;
+}
+#developer-info {
+    margin: 5px 0;
+    font-size: 0.8em;
+}
+
+/* Utility: For elements that should be visually hidden but accessible */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* --- About Page Specifics --- */
+#about-page-heading { /* For about.html, matching embedded style */
+    color: brown;
+    font-size: 2.8em;
+    margin-bottom: 8px;
+    text-align: center; /* Ensure it's centered if main-content-cell default is overridden */
+}
+
+
+/* --- Contact Page Specifics --- */
+#contact-page-heading {
+    color: brown; /* Match welcome-heading color */
+    font-size: 2.8em; /* Slightly smaller than homepage welcome */
+    margin-bottom: 8px;
+}
+
+#contact-intro {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#contact-layout-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse; /* Ensure no double borders if cell borders were added */
+}
+
+#contact-image-cell {
+    width: 40%; /* Adjust as needed for image column */
+    padding: 15px;
+    vertical-align: top;
+    text-align: center; /* Center the image and text below it */
+}
+
+#baker-image {
+    max-width: 90%; /* Make it slightly smaller than cell width */
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #f0f0f0; /* Match product-thumbnail border */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+#other-contact-heading {
+    color: #333;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-details-text {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+#contact-form-cell {
+    width: 60%; /* Adjust as needed for form column */
+    padding: 15px;
+    vertical-align: top;
+    text-align: left; /* Align form content to the left */
+}
+
+#form-heading {
+    color: #333; /* Match featured-title */
+    font-size: 1.8em;
+    margin-top: 0; /* Align with top of cell if possible */
+    margin-bottom: 20px;
+    text-align: left; /* Ensure heading is left-aligned */
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form textarea {
+    width: calc(100% - 22px); /* Account for 10px padding on each side + 1px border each side */
+    padding: 10px;
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    border: 1px solid #ccc; /* Slightly darker border for better visibility */
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box; /* Critical for width calculation with padding/border */
+    font-family: Arial, sans-serif; /* Ensure consistent font */
+}
+
+#contact-form input[type="text"]:focus,
+#contact-form input[type="email"]:focus,
+#contact-form input[type="tel"]:focus,
+#contact-form textarea:focus {
+    border-color: #d3a76b; /* Highlight focus with theme color */
+    box-shadow: 0 0 5px rgba(211, 167, 107, 0.5);
+    outline: none;
+}
+
+
+#contact-form textarea {
+    height: 120px; /* Adjusted height */
+    resize: vertical;
+}
+
+#contact-form button[type="submit"] {
+    background-color: #e4b87c; /* Theme color */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px; /* Slightly more rounded */
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: block; /* Make button block to control alignment if needed */
+    margin-top: 10px; /* Add some space above the button */
+}
+
+#contact-form button[type="submit"]:hover {
+    background-color: #c2965a; /* Darker shade on hover */
+}
